@@ -1,0 +1,18 @@
+\documentclass{article}
+
+\begin{document}
+\[ D_{j}S_{i}= \frac{\partial{\frac{e^{a_{i}}}{\sum_{k=0}^{N}e^{a_{k}}}}}{\partial{a_{j}}}\]
+The softmax derivative looks a cool candidate for quotient rule $f(x)=\frac{g(x)}{h(x)}$
+\[g(x)=e^a_{i}\]
+\[h(x)=\sum_{k=0}^{N}{e^{a_{k}}}\]
+The following cases will help in our quest to compute jacobians. \\
+
+1) for N=0..2,
+\[\sum_{k=0}^{N}{e^{a_{k}}}=e^{a_{0}}+e^{a_{1}}+e^{a_{2}}\]
+	if we compute derivative of all elements w.r.t to $a_{0}$ all derivative except  $\frac{\partial{e^{a_{0}}}}{\partial{a_{0}}}$ will be zero 
+\[\frac{\partial{e^{a_{0}}}}{\partial{a_{0}}}=e^{a_{0}}\]
+\\
+\\
+\[Hence\]
+\[\bf{\sum_{k=0}^{N}{e^{a_{k}}}=e^{a_{i}}}\]
+\end{document}

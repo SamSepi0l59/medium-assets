@@ -1,0 +1,21 @@
+\documentclass{article}
+
+\begin{document}
+
+if i=j,
+\[\frac{\partial{\frac{e^{a_{i}}}{\sum_{k=0}^{N}e^{a_{k}}}}}{\partial{a_{j}}}=\frac{\sum{{e^{a_{k}}}}.e^{a_{j}}-{e^{a_{i}}.e^{a_{j}}}}{{\sum{e^{a_{k}}}}^2}\]
+\\
+from hypothesis 1 $\bf{\sum_{k=0}^{N}{e^{a_{k}}}=e^{a_{j}}}$
+\\
+\[\frac{\partial{\frac{e^{a_{i}}}{\sum_{k=0}^{N}e^{a_{k}}}}}{\partial{a_{j}}}=\frac{e^{a_{j}}}{\sum{e^{a_{k}}}}.{\frac{\sum{e^{a_{k}}}-e^{a_{i}}}{\sum{e^{a_{k}}}}}\]
+\\
+\[\frac{\partial{\frac{e^{a_{i}}}{\sum_{k=0}^{N}e^{a_{k}}}}}{\partial{a_{j}}}={S_{j}}*(1-{S_{i}})\]
+\\
+\\
+if i!=j,
+from hypothesis 2 with condition i!=j
+\\
+\[\frac{\partial{\frac{e^{a_{i}}}{\sum_{k=0}^{N}e^{a_{k}}}}}{\partial{a_{j}}}=\frac{\sum{{e^{a_{k}}}}.0-{e^{a_{i}}.e^{a_{j}}}}{{\sum{e^{a_{k}}}}^2}\]
+\\
+\[\frac{\partial{\frac{e^{a_{i}}}{\sum_{k=0}^{N}e^{a_{k}}}}}{\partial{a_{j}}}=-{S_{j}}.{S_{i}}\]
+\end{document}
